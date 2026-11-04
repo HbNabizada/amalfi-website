@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amalfi Bar & Pizzeria</title>
+
+    <meta name="description" content="Enjoy authentic Italian pizza and pasta at Amalfi Bar & Pizzeria.">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <a href="#home" class="logo">
+            <span>AMALFI</span>
+            <small>BAR & PIZZERIA</small>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Open menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="navigation" id="navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a href="#booking" class="nav-button">Book a Table</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+                <p class="eyebrow">A LITTLE TASTE OF ITALY</p>
+
+                <h1>
+                    Good Food.<br>
+                    Beautiful Moments.
+                </h1>
+
+                <p>
+                    Discover delicious pizza, comforting pasta
+                    and a warm place to gather.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-white">
+                        Explore Menu
+                    </a>
+
+                    <a href="#booking" class="btn btn-outline">
+                        Book a Table
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section class="about section" id="about">
+
+            <div class="about-image">
+                <img
+                    src="images/team.png"
+                    alt="Amalfi restaurant interior">
+            </div>
+
+            <div class="about-content">
+
+                <p class="eyebrow">OUR STORY</p>
+
+                <h2>Welcome to <em>Amalfi</em></h2>
+
+                <p>
+                    We believe great food brings people together.
+                    From delicious Italian pizzas and carefully prepared dishes 
+                    to refreshing drinks and a relaxing atmosphere, every detail is designed to make your visit special.
+                </p>
+
+                <p>
+                    Inspired by Mediterranean flavors and island lifestyle,
+                    Amalfi is a place to enjoy good food, great company,
+                    and unforgettable moments.
+                </p>
+                <p>
+                    Whether you're joining us for a casual lunch, 
+                    a romantic dinner, or an evening with friends,
+                    there's always a place for you at Amalfi
+                </p>
+
+                <a href="#menu" class="text-link">
+                    DISCOVER OUR MENU →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- MENU SECTION -->
+        <section class="menu section" id="menu">
+
+            <div class="section-heading">
+                <p class="eyebrow">MADE TO BE ENJOYED</p>
+                <h2>Guest <em>Favourites</em></h2>
+                <p>A few delicious ideas from our kitchen.</p>
+            </div>
+
+            <div class="menu-grid">
+
+                <article class="menu-card">
+                    <img
+                        src="images/pizza-1.jpeg"
+                        alt="Margherita Pizza">
+
+                    <div class="menu-info">
+                        <h3>Margherita Pizza</h3>
+                        <p>Tomato, mozzarella and fresh basil.</p>
+                        <span>$12</span>
+                    </div>
+                </article>
+
+
+                <article class="menu-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800"
+                        alt="Italian Pasta">
+
+                    <div class="menu-info">
+                        <h3>Italian Pasta</h3>
+                        <p>Fresh pasta with delicious Italian sauce.</p>
+                        <span>$15</span>
+                    </div>
+                </article>
+
+
+                <article class="menu-card">
+                    <img
+                        src="images/pizza-2.jpeg"
+                        alt="Pepperoni Pizza">
+
+                    <div class="menu-info">
+                        <h3>Pepperoni Pizza</h3>
+                        <p>Mozzarella, tomato and pepperoni.</p>
+                        <span>$14</span>
+                    </div>
+                </article>
+
+
+                <article class="menu-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=800"
+                        alt="Penne Pasta">
+
+                    <div class="menu-info">
+                        <h3>Penne Pasta</h3>
+                        <p>Penne with delicious tomato sauce.</p>
+                        <span>$13</span>
+                    </div>
+                </article>
+                <!-- Hidden Menu Items -->
+
+                <article class="menu-card hidden-menu">
+                    <img src="images/pizza2.jpg" alt="Four Cheese Pizza">
+                    <div class="menu-info">
+                        <h3>Four Cheese Pizza</h3>
+                        <p>Four delicious cheeses and fresh herbs.</p>
+                        <span>$16</span>
+                    </div>
+                </article>
+
+                <article class="menu-card hidden-menu">
+                    <img src="images/pasta2.jpg" alt="Creamy Pasta">
+                    <div class="menu-info">
+                        <h3>Creamy Pasta</h3>
+                        <p>Creamy sauce with parmesan cheese.</p>
+                        <span>$14</span>
+                    </div>
+                </article>
+
+            </div>
+                        <div class="more-menu">
+                        <button id="moreBtn" class="btn btn-green">
+                         View More
+                              </button>
+            </div>
+            
+        </section>
+
+
+        <!-- GALLERY SECTION -->
+        <section class="gallery section" id="gallery">
+
+            <div class="section-heading">
+                <p class="eyebrow">OUR GALLERY</p>
+                <h2>A Glimpse of <em>Amalfi</em></h2>
+                <p>Good food, beautiful moments.</p>
+            </div>
+
+            <div class="gallery-grid">
+
+                <img
+                    src="images/pizza-3.jpeg"
+                    alt="Italian pizza">
+
+                <img
+                    src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"
+                    alt="Restaurant dining">
+
+                <img
+                    src="https://images.unsplash.com/photo-1498579150354-977475b7ea0b?w=800"
+                    alt="Italian food">
+
+                <img
+                    src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800"
+                    alt="Restaurant table">
+
+                <img
+                    src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?w=800"
+                    alt="Pasta dish">
+
+                <img
+                    src="https://images.unsplash.com/photo-1579751626657-72bc17010498?w=800"
+                    alt="Fresh food">
+
+            </div>
+
+        </section>
+
+
+        <!-- BOOKING SECTION -->
+        <section class="booking section" id="booking">
+
+            <div class="booking-info">
+                <p class="eyebrow">YOUR TABLE IS WAITING</p>
+
+                <h2>Make it a<br><em>Special Occasion.</em></h2>
+
+                <p>
+                    Planning a meal with friends or a relaxed
+                    evening out? Send us a reservation request.
+                </p>
+            </div>
+
+
+            <form class="booking-form" id="bookingForm">
+
+                <h3>Request a Reservation</h3>
+
+                <label>
+                    Your Name
+                    <input type="text" name="name"
+                           placeholder="Full name" required>
+                </label>
+
+                <label>
+                    Phone Number
+                    <input type="tel" name="phone"
+                           placeholder="Phone number" required>
+                </label>
+
+                <div class="form-row">
+
+                    <label>
+                        Date
+                        <input type="date" name="date" required>
+                    </label>
+
+                    <label>
+                        Time
+                        <input type="time" name="time" required>
+                    </label>
+
+                </div>
+
+                <label>
+                    Number of Guests
+                    <select name="guests" required>
+                        <option value="">Select guests</option>
+                        <option>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>3 Guests</option>
+                        <option>4 Guests</option>
+                        <option>5 Guests</option>
+                        <option>6 Guests</option>
+                        <option>7+ Guests</option>
+                    </select>
+                </label>
+
+                <label>
+                    Special Request
+                    <textarea name="message" rows="3"
+                        placeholder="Any special request?"></textarea>
+                </label>
+
+                <button type="submit" class="btn btn-green">
+                    Send Reservation Request
+                </button>
+
+                <p id="bookingMessage" aria-live="polite"></p>
+
+                <small>
+                    Your reservation is subject to restaurant confirmation.
+                </small>
+
+            </form>
+
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+        <section class="contact section" id="contact">
+
+            <div class="section-heading">
+                <p class="eyebrow">COME SAY HELLO</p>
+                <h2>Find Your Way to <em>Amalfi</em></h2>
+                <p>We look forward to welcoming you.</p>
+            </div>
+
+            <div class="contact-grid">
+
+                <div>
+                    <h3>Location</h3>
+                    <p>Restaurant address coming soon</p>
+                </div>
+
+                <div>
+                    <h3>Phone</h3>
+                    <p>Phone number coming soon</p>
+                </div>
+
+                <div>
+                    <h3>Opening Hours</h3>
+                    <p>Opening hours coming soon</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-brand">
+            <h2>AMALFI</h2>
+            <p>BAR & PIZZERIA</p>
+            <small>Good food. Beautiful moments.</small>
+        </div>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#booking">Reservations</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Amalfi Bar & Pizzeria. All Rights Reserved.
+        </div>
+
+    </footer>
+
+</body>
+</html>
