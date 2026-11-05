@@ -35,6 +35,16 @@
             <a href="#gallery">Gallery</a>
             <a href="#contact">Contact</a>
             <a href="#booking" class="nav-button">Book a Table</a>
+            <div class="order-dropdown">
+            <button class="nav-button order-toggle" id="orderToggle">
+                Order Online
+            </button>
+
+            <div class="order-options" id="orderOptions">
+                <a href="https://app.grab.com/s/N8ySoJFP" target="_blank">Order with GrabFood</a>
+                <a href="https://gofood.link/a/SDcudvj" target="_blank">Order with GoFood</a>
+            </div>
+        </div>
         </nav>
 
     </header>
@@ -46,16 +56,16 @@
         <section class="hero" id="home">
 
             <div class="hero-content">
-                <p class="eyebrow">A LITTLE TASTE OF ITALY</p>
+                <p class="eyebrow">A LITTLE TASTE OF ITALY in Bali</p>
 
                 <h1>
-                    Good Food.<br>
-                    Beautiful Moments.
+                    Great Pizza, Good drinks<br>
+                    Unforgettable Moments.
                 </h1>
 
                 <p>
-                    Discover delicious pizza, comforting pasta
-                    and a warm place to gather.
+                    Discover delicious pizza, refreshing drinks,
+                     and a vibrant bar atmosphere at Amalfi Bar & Pizzeria.
                 </p>
 
                 <div class="hero-buttons">
@@ -77,7 +87,7 @@
 
             <div class="about-image">
                 <img
-                    src="images/team.png"
+                    src="images/about.jpg"
                     alt="Amalfi restaurant interior">
             </div>
 
@@ -88,20 +98,19 @@
                 <h2>Welcome to <em>Amalfi</em></h2>
 
                 <p>
-                    We believe great food brings people together.
-                    From delicious Italian pizzas and carefully prepared dishes 
-                    to refreshing drinks and a relaxing atmosphere, every detail is designed to make your visit special.
+                    We believe great pizza brings people together.
+                    Inspired by the rich flavors of Italy and the relaxed island lifestyle of Bali, Amalfi
+                    celebrates the art of Italian pizza, made with passion and quality ingredients.
                 </p>
 
                 <p>
-                    Inspired by Mediterranean flavors and island lifestyle,
-                    Amalfi is a place to enjoy good food, great company,
-                    and unforgettable moments.
+                    Alongside our Italian dishes, refreshing cocktails, and carefully selected drinks, we creat a welcoming
+                    atmosphere where great food, good music, and great company come together.
                 </p>
                 <p>
                     Whether you're joining us for a casual lunch, 
                     a romantic dinner, or an evening with friends,
-                    there's always a place for you at Amalfi
+                    Amalfi is the perfect place to enjoy a little taste of Italy.
                 </p>
 
                 <a href="#menu" class="text-link">
@@ -113,95 +122,36 @@
         </section>
 
 
-        <!-- MENU SECTION -->
-        <section class="menu section" id="menu">
+            <!-- MENU SECTION -->
+            <section class="menu section" id="menu">
 
-            <div class="section-heading">
-                <p class="eyebrow">MADE TO BE ENJOYED</p>
-                <h2>Guest <em>Favourites</em></h2>
-                <p>A few delicious ideas from our kitchen.</p>
-            </div>
+                <div class="section-heading">
+                    <p class="eyebrow">MADE TO BE ENJOYED</p>
+                    <h2>Discover Our <em>Menu</em></h2>
+                    <p>Explore our delicious food and refreshing drinks.</p>
+                </div>
 
-            <div class="menu-grid">
+                <!-- FOOD MENU -->
+                <div class="full-menu-section">
+                    <h3>Food Menu</h3>
 
-                <article class="menu-card">
-                    <img
-                        src="images/pizza-1.jpeg"
-                        alt="Margherita Pizza">
-
-                    <div class="menu-info">
-                        <h3>Margherita Pizza</h3>
-                        <p>Tomato, mozzarella and fresh basil.</p>
-                        <span>$12</span>
+                    <div class="full-menu-image">
+                        <img src="images/food.png"
+                            alt="Amalfi Food Menu">
                     </div>
-                </article>
+                </div>
 
+                <!-- DRINKS MENU -->
+                <div class="full-menu-section">
+                    <h3>Drinks Menu</h3>
 
-                <article class="menu-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800"
-                        alt="Italian Pasta">
-
-                    <div class="menu-info">
-                        <h3>Italian Pasta</h3>
-                        <p>Fresh pasta with delicious Italian sauce.</p>
-                        <span>$15</span>
+                    <div class="full-menu-image">
+                        <img src="images/drink.png"
+                            alt="Amalfi Drinks Menu">
                     </div>
-                </article>
+                </div>
 
-
-                <article class="menu-card">
-                    <img
-                        src="images/pizza-2.jpeg"
-                        alt="Pepperoni Pizza">
-
-                    <div class="menu-info">
-                        <h3>Pepperoni Pizza</h3>
-                        <p>Mozzarella, tomato and pepperoni.</p>
-                        <span>$14</span>
-                    </div>
-                </article>
-
-
-                <article class="menu-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=800"
-                        alt="Penne Pasta">
-
-                    <div class="menu-info">
-                        <h3>Penne Pasta</h3>
-                        <p>Penne with delicious tomato sauce.</p>
-                        <span>$13</span>
-                    </div>
-                </article>
-                <!-- Hidden Menu Items -->
-
-                <article class="menu-card hidden-menu">
-                    <img src="images/pizza2.jpg" alt="Four Cheese Pizza">
-                    <div class="menu-info">
-                        <h3>Four Cheese Pizza</h3>
-                        <p>Four delicious cheeses and fresh herbs.</p>
-                        <span>$16</span>
-                    </div>
-                </article>
-
-                <article class="menu-card hidden-menu">
-                    <img src="images/pasta2.jpg" alt="Creamy Pasta">
-                    <div class="menu-info">
-                        <h3>Creamy Pasta</h3>
-                        <p>Creamy sauce with parmesan cheese.</p>
-                        <span>$14</span>
-                    </div>
-                </article>
-
-            </div>
-                        <div class="more-menu">
-                        <button id="moreBtn" class="btn btn-green">
-                         View More
-                              </button>
-            </div>
-            
-        </section>
+            </section>
 
 
         <!-- GALLERY SECTION -->
@@ -220,15 +170,15 @@
                     alt="Italian pizza">
 
                 <img
-                    src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"
+                    src="images/galary1.jpg"
                     alt="Restaurant dining">
 
                 <img
-                    src="https://images.unsplash.com/photo-1498579150354-977475b7ea0b?w=800"
-                    alt="Italian food">
+                    src="images/team.png"
+                    alt="our taem">
 
                 <img
-                    src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800"
+                    src="images/galary2.jpg"
                     alt="Restaurant table">
 
                 <img
@@ -259,67 +209,22 @@
             </div>
 
 
-            <form class="booking-form" id="bookingForm">
+            <div class="booking-form">
+                <h3>Book Your Table</h3>
 
-                <h3>Request a Reservation</h3>
+                <p>
+                    Ready to enjoy a wonderful meal?
+                    Contact us directly on WhatsApp to reserve your table.
+                </p>
 
-                <label>
-                    Your Name
-                    <input type="text" name="name"
-                           placeholder="Full name" required>
-                </label>
-
-                <label>
-                    Phone Number
-                    <input type="tel" name="phone"
-                           placeholder="Phone number" required>
-                </label>
-
-                <div class="form-row">
-
-                    <label>
-                        Date
-                        <input type="date" name="date" required>
-                    </label>
-
-                    <label>
-                        Time
-                        <input type="time" name="time" required>
-                    </label>
-
-                </div>
-
-                <label>
-                    Number of Guests
-                    <select name="guests" required>
-                        <option value="">Select guests</option>
-                        <option>1 Guest</option>
-                        <option>2 Guests</option>
-                        <option>3 Guests</option>
-                        <option>4 Guests</option>
-                        <option>5 Guests</option>
-                        <option>6 Guests</option>
-                        <option>7+ Guests</option>
-                    </select>
-                </label>
-
-                <label>
-                    Special Request
-                    <textarea name="message" rows="3"
-                        placeholder="Any special request?"></textarea>
-                </label>
-
-                <button type="submit" class="btn btn-green">
-                    Send Reservation Request
-                </button>
-
-                <p id="bookingMessage" aria-live="polite"></p>
-
-                <small>
-                    Your reservation is subject to restaurant confirmation.
-                </small>
-
-            </form>
+                <a
+                    href="https://wa.me/6282266250840"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-green">
+                    Book a Table on WhatsApp
+                </a>
+            </div>
 
         </section>
 
@@ -336,21 +241,79 @@
             <div class="contact-grid">
 
                 <div>
-                    <h3>Location</h3>
-                    <p>Restaurant address coming soon</p>
-                </div>
+                        <h3>Location</h3>
 
-                <div>
-                    <h3>Phone</h3>
-                    <p>Phone number coming soon</p>
+                        <a
+                            href="https://www.google.com/maps/search/?api=1&query=-8.694963%2C115.168198"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="location-link">
+                            View Our Location on Google Maps
+                        </a>
+
+                 <div class="location-map">
+                        <iframe
+                            src="https://maps.google.com/maps?q=-8.694963,115.168198&z=17&output=embed"
+                            width="100%"
+                            height="250"
+                            style="border:0;"
+                            loading="lazy"
+                            allowfullscreen>
+                        </iframe>
+                 </div>
+            </div>
+
+              <div class="phone-card">
+                <h3>Phone</h3>
+
+                <a href="tel:+6282313537879" class="phone-number">
+                    +62 823-1353-7879
+                </a>
+
+                <div class="phone-image">
+                    <img
+                        src="images/phone_reservation.png"
+                        alt="Restaurant receptionist answering a phone">
                 </div>
+            </div>
 
                 <div>
                     <h3>Opening Hours</h3>
-                    <p>Opening hours coming soon</p>
+
+                    <table class="opening-hours">
+                        <tr>
+                            <th>Thursday</th>
+                            <td>11:00 - 00:00</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>11:00 - 00:00</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>11:00 - 00:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>11:00 - 00:00</td>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Closed</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>17:00 - 00:00</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>11:00 - 00:00</td>
+                        </tr>
+                    </table>
                 </div>
 
             </div>
+         
 
         </section>
 
