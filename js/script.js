@@ -44,85 +44,69 @@ navLinks.forEach(function (link) {
 });
 
 
-// BOOKING FORM
 
-const bookingForm = document.getElementById("bookingForm");
-
-const bookingMessage = document.getElementById("bookingMessage");
-
-const dateInput = document.querySelector('input[name="date"]');
-
-
-// Prevent selecting past dates
-
-const today = new Date();
-
-const localToday = new Date(
-    today.getTime() - today.getTimezoneOffset() * 60000
-).toISOString().split("T")[0];
-
-dateInput.min = localToday;
-
-
-// Handle reservation form
-
-bookingForm.addEventListener("submit", function (event) {
-
-    event.preventDefault();
-
-    if (!bookingForm.reportValidity()) {
-        return;
-    }
-
-    bookingMessage.textContent =
-        "Thank you! Your reservation request has been received in this demo.";
-
-    bookingForm.reset();
-
-});
-
-// VIEW MORE MENU
-
-// VIEW MORE MENU
-
-const moreBtn = document.getElementById("moreBtn");
-const hiddenItems = document.querySelectorAll(".hidden-menu");
-
-if (moreBtn) {
-
-    moreBtn.addEventListener("click", function () {
-
-        hiddenItems.forEach(function(item) {
-            item.classList.add("show");
-        });
-
-        moreBtn.style.display = "none";
-
-    });
-
-}
-
-
-// RESET MENU WHEN CLICKING NAVIGATION LINKS
+// MENU SHOW AND HIDE
 
 const menuSection = document.getElementById("menu");
 
-const navigationLinks = document.querySelectorAll(
-    '.navigation a[href^="#"]'
-);
+// All links that point to the menu
+const menuLinks = document.querySelectorAll('a[href="#menu"]');
 
-navigationLinks.forEach(function(link) {
+// Show menu when clicking Menu or Discover Our Menu
+menuLinks.forEach(function(link) {
 
-    link.addEventListener("click", function() {
+    link.addEventListener("click", function(event) {
 
-        hiddenItems.forEach(function(item) {
-            item.classList.remove("show");
+        event.preventDefault();
+
+        menuSection.classList.add("menu-visible");
+
+        menuSection.scrollIntoView({
+            behavior: "smooth"
         });
-
-        if (moreBtn) {
-            moreBtn.style.display = "inline-block";
-        }
 
     });
 
+});
+
+// Hide menu when navigating to other sections
+const allSectionLinks = document.querySelectorAll('a[href^="#"]');
+
+allSectionLinks.forEach(function(link) {
+
+    if (link.getAttribute("href") !== "#menu") {
+
+        link.addEventListener("click", function() {
+
+            menuSection.classList.remove("menu-visible");
+
+        });
+
+    }
+
+});
+
+/*buton order options */
+const orderToggle = document.getElementById("orderToggle");
+const orderOptions = document.getElementById("orderOptions");
+const orderDropdown = document.querySelector(".order-dropdown");
+
+// Open and close menu
+orderToggle.addEventListener("click", function (event) {
+    event.stopPropagation();
+    orderOptions.classList.toggle("show");
+});
+
+// Close menu after selecting an option
+orderOptions.addEventListener("click", function (event) {
+    if (event.target.closest("a")) {
+        orderOptions.classList.remove("show");
+    }
+});
+
+// Close menu when clicking outside
+document.addEventListener("click", function (event) {
+    if (!orderDropdown.contains(event.target)) {
+        orderOptions.classList.remove("show");
+    }
 });
